@@ -1,10 +1,17 @@
 import React from "react";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Nav from "./components/Nav/Nav";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Works from "./pages/Works/Works";
+import Skills from "./pages/Skills/Skills";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
