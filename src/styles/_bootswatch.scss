@@ -1,9 +1,8 @@
 // Lux 4.3.1
 // Bootswatch
-
+@import "./variables";
 
 // Variables ===================================================================
-
 $web-font-path: "https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&display=swap" !default;
 @import url($web-font-path);
 
@@ -16,8 +15,8 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&dis
 
   &-nav {
     .nav-link {
-      padding-top: .715rem;
-      padding-bottom: .715rem;
+      padding-top: 0.715rem;
+      padding-bottom: 0.715rem;
     }
   }
 
@@ -98,7 +97,12 @@ body {
   letter-spacing: 1px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -115,12 +119,14 @@ th {
 }
 
 .table {
-  th, td {
+  th,
+  td {
     padding: 1.5rem;
   }
 
   &-sm {
-    th, td {
+    th,
+    td {
       padding: 0.75rem;
     }
   }
@@ -128,9 +134,7 @@ th {
 
 // Forms =======================================================================
 
-
 .custom-switch {
-
   .custom-control-label {
     &::after {
       top: calc(0.15625rem + 2px);
@@ -163,14 +167,23 @@ th {
 // Containers ==================================================================
 
 .list-group-item {
-  h1, h2, h3, h4, h5, h6,
-  .h1, .h2, .h3, .h4, .h5, .h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
     color: inherit;
   }
 }
 
 .card {
-
   &-title,
   &-header {
     color: inherit;
