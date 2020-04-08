@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootswatch/dist/lux/bootstrap.css";
 import {
+  Container,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -18,7 +19,10 @@ const Header = (props) => {
   const toggleNavbar = () => setCollapsed(!collapsed);
   return (
     <div>
-      <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <Navbar
+        className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary"
+        position="sticky"
+      >
         <NavbarBrand className="mr-auto">
           <Link to="/" className="nav-link navbar-brand">
             EULA BENGCO
