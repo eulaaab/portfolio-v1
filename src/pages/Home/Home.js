@@ -24,9 +24,9 @@ export default class Home extends Component {
                   <source src={videoMain} type="video/mp4" />
                 </video>
               </div>
-              {
-                //<h1>Eula Bengco - Web Developer</h1>
-              }
+              
+                <h1>Hi there! I'm Eula Bengco</h1>
+              <h2> web developer based in Toronto, Canada. </h2>
             </div>
           </section>
         </main>
