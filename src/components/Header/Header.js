@@ -46,11 +46,14 @@ const Header = (props) => {
                 WORKS
               </Link>
             </NavItem>
-            <NavItem>
+            {/*
+ <NavItem>
               <Link to="/skills" className="nav-link">
                 SKILLS
               </Link>
             </NavItem>
+              */}
+
             <NavItem>
               <Link to="/contact" className="nav-link">
                 CONTACT

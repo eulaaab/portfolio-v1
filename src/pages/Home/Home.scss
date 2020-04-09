@@ -9,7 +9,6 @@
   //background-position: center;
   height: 100vh;
   width: 100%;
-
   //position: relative;
   overflow-y: hidden;
   @include medium {
@@ -55,4 +54,51 @@
   //background-size: cover;
   //z-index: -1;
   //background-repeat: no-repeat;
+}
+
+.hero {
+  &__text-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem 1rem;
+    position: absolute;
+    width: fit-content;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //border: 0px solid none;
+    outline: none;
+    border-radius: 1rem;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 600 !important;
+    color: $white;
+    //text-align: center;
+  }
+  &__tagline {
+    font-weight: 900;
+    color: $white;
+    //text-align: center;
+  }
+}
+
+.btn {
+  border-radius: 1rem;
+  &:hover {
+    font-weight: bolder;
+    background-color: $white;
+    color: black;
+  }
+}
+
+.icon {
+  &__react {
+    // color: white;
+    &:hover {
+      //font-weight: bolder;
+      //background-color: $white;
+      // color: black;
+    }
+  }
 }
