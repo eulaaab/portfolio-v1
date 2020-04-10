@@ -1,0 +1,10 @@
+@import "../../styles//partials/variables";
+@import "../../styles/partials/breakpoints";
+
+.about {
+  &__title {
+    position: relative;
+    top: 120px;
+    padding-left: 1rem;
+  }
+}
