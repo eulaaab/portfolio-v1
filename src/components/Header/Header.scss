@@ -1,4 +1,5 @@
 @import "../../../src/styles/partials/variables";
+@import "../../../src/styles/partials/breakpoints";
 
 .navbar-collapse {
   place-content: flex-end !important;
@@ -14,4 +15,24 @@
   //width: 100%;
   //background-color: $black;
   z-index: 10;
+}
+
+.nav {
+  &__logo {
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-right: 0px;
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+  &__text {
+    font-size: 1.1rem;
+  }
+}
+
+.hero {
+  &__text-container {
+    //margin: 0.5rem 0.7rem 0rem 0.7rem;
+  }
 }

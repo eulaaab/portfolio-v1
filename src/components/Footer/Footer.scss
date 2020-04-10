@@ -2,19 +2,77 @@
 @import "../../styles/partials/breakpoints";
 
 .footer {
-  display: flex;
-  position: fixed;
   background-color: $gray-700;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 8vh;
-  justify-content: center;
+  //height: 10vh;
   color: rgba(255, 255, 255, 0.5);
+  @include tablet {
+    display: flex;
+    position: fixed;
+  }
+  &__text {
+    @include tablet {
+      text-align: left;
+    }
+  }
+  &__social {
+    display: flex;
+    // position: relative;
+    align-items: center;
+    text-align: right;
+    @include tablet {
+      justify-content: flex-end;
+    }
+  }
 }
 
 .container {
-  align-self: center !important;
+  // display: flex;
+  // flex-direction: column;
+  @include tablet {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    //display: flex;
+    // justify-content: space-between;
+    //margin-right: 0rem;
+    // margin-left: 0rem;
+    // max-width: unset;
+    @include desktop {
+      margin-right: 0rem;
+      margin-left: 0rem;
+      max-width: none;
+    }
+  }
+}
+
+.row {
+  // display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include tablet {
+    // display: contents;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.col-6 {
+  max-width: unset;
+  @include tablet {
+    //   padding-top: 0px;
+    //max-width: unset;
+  }
+}
+
+.col {
+  text-align: center;
+  @include tablet {
+    min-width: min-content;
+    max-width: min-content;
+  }
 }
 
 .icon {
@@ -23,5 +81,11 @@
   &:hover {
     // font-size: 900;
     color: rgba(255, 255, 255, 0.5);
+  }
+  @include tablet {
+    font-size: 2.3rem;
+  }
+  &__heart {
+    color: red;
   }
 }

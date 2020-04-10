@@ -1,0 +1,23 @@
+@keyframes mymove {
+  from {
+    top: 290px;
+  }
+  to {
+    top: 400px;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

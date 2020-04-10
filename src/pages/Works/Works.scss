@@ -1,0 +1,12 @@
+@import "../../styles/partials/variables";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/mixins";
+.box {
+  position: relative;
+  top: 290px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  //position: relative;
+  @include mymove;
+}

@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, NavLink, withRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootswatch/dist/lux/bootstrap.css";
 import {
-  Container,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -14,37 +13,56 @@ import {
 import "./Header.scss";
 
 const Header = (props) => {
-  const [collapsed, setCollapsed] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleNavbar = () => setIsOpen(!isOpen);
+  useEffect(() =>
+    props.history.listen(() => {
+      setIsOpen(false);
+    })
+  );
 
-  const toggleNavbar = () => setCollapsed(!collapsed);
+  //onToggleNavBar={() => setIsOpen(!isOpen)}
   return (
     <div>
-      <Navbar
-        className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary"
-        position="sticky"
-      >
-        <NavbarBrand className="mr-auto">
-          <Link to="/" className="nav-link navbar-brand">
+      <Navbar className="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <NavbarBrand>
+          <Link to="/" className="nav-link navbar-brand nav__logo">
             EULA BENGCO
           </Link>
         </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-        <Collapse isOpen={!collapsed} navbar>
-          <Nav navbar>
+        <NavbarToggler
+          onClick={toggleNavbar}
+          onToggleMenu={() => setIsOpen(!isOpen)}
+        />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
             <NavItem>
-              <Link to="/" className="nav-link">
+              <NavLink
+                to="/"
+                className="nav-link nav__text"
+                activeClassName="active"
+                exact={true}
+              >
                 HOME
-              </Link>
+              </NavLink>
             </NavItem>
             <NavItem>
-              <Link to="/about" className="nav-link">
+              <NavLink
+                to="/about"
+                className="nav-link nav__text"
+                activeClassName="active"
+              >
                 ABOUT
-              </Link>
+              </NavLink>
             </NavItem>
             <NavItem>
-              <Link to="/works" className="nav-link">
+              <NavLink
+                to="/works"
+                className="nav-link nav__text"
+                activeClassName="active"
+              >
                 WORKS
-              </Link>
+              </NavLink>
             </NavItem>
             {/*
  <NavItem>
@@ -55,9 +73,13 @@ const Header = (props) => {
               */}
 
             <NavItem>
-              <Link to="/contact" className="nav-link">
+              <NavLink
+                to="/contact"
+                className="nav-link nav__text"
+                activeClassName="active"
+              >
                 CONTACT
-              </Link>
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
@@ -66,4 +88,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default withRouter(Header);
