@@ -84,8 +84,7 @@ export default class About extends Component {
                     <FontAwesomeIcon
                       icon={faJs}
                       className="icon"
-                      alt=""
-                      JavaScript
+                      alt=" JavaScript"
                     />
                   </li>
                   <li>
