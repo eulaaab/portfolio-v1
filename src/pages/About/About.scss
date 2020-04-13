@@ -2,9 +2,116 @@
 @import "../../styles/partials/breakpoints";
 
 .about {
-  &__title {
+  padding-top: 90px;
+  &__hero {
+    overflow: hidden;
     position: relative;
-    top: 120px;
-    padding-left: 1rem;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../assets/images/about-01.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-position-y: center;
+    @include tablet {
+      background-attachment: unset;
+      overflow-y: hidden;
+      background-repeat: no-repeat;
+    }
+  }
+  &__text-container {
+    position: relative;
+    top: 20px;
+    padding: 0rem 1rem;
+    width: auto;
+    @include tablet {
+      display: flex;
+    }
+  }
+  &__header {
+    color: $white;
+    font-size: 1.5rem;
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+  &__text,
+  &__skills {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: $white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.3rem;
+    width: auto;
+    @include desktop {
+      width: 50%;
+      margin: 0rem 5rem;
+      font-size: 1.5rem;
+    }
+  }
+  &__icons {
+    display: inline-flex;
+    padding-left: 0rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0rem;
+  }
+  &__text {
+    margin-bottom: 0.5rem;
+    @include tablet {
+      width: 85%;
+      margin-right: 2rem;
+    }
+    &--mobile {
+      display: none;
+      @include tablet {
+        display: inline;
+      }
+    }
+  }
+  &__skills {
+    @include tablet {
+      width: fit-content;
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+  display: table;
+  flex-wrap: wrap;
+}
+
+p {
+  @include tablet {
+    font-size: 1rem;
+  }
+}
+
+.icon {
+  font-size: 2.1rem !important;
+  margin-right: 0.5rem;
+  margin-top: 0.1rem;
+  &:hover {
+    font-size: 2.5rem !important;
+  }
+  &__heroku {
+    width: 28px;
+    height: 28px;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin-right: 0.5rem;
+    margin-top: 0rem;
+    & :hover {
+      font-size: 2.5rem;
+      color: #343a40;
+    }
+  }
+}
+
+body {
+  letter-spacing: 0px !important;
+  @include tablet {
+    letter-spacing: 1px;
   }
 }

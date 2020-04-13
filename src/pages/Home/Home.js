@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import videoMain from "../../assets/video/video.mp4";
 import "./Home.scss";
-import { Link } from "react-router-dom";
-//import { library } from "@fortawesome/fontawesome-svg-core";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,7 +13,7 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <main className="homepage">
+        <main className="home">
           <section>
             <div className="hero-overlay">
               <div className="hero"></div>
@@ -36,7 +35,15 @@ export default class Home extends Component {
                 Web developer based in Toronto, Canada.{" "}
               </h2>
 
-              <Link to="/about">
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="nav-link nav__text"
+              >
                 <button type="button" className="btn btn-primary">
                   Learn More About Me
                   <span className="icon__react">

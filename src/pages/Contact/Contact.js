@@ -7,7 +7,9 @@ export default class Contact extends Component {
   render() {
     return (
       <>
-        <h1>Say Hello!</h1>
+        <section className="contact">
+          <h1>Say Hello!</h1>
+        </section>
         {/*
   <div id="background">
           <img src={contact1} className="bottom" />

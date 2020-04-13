@@ -64,14 +64,6 @@ const Header = (props) => {
                 WORKS
               </NavLink>
             </NavItem>
-            {/*
- <NavItem>
-              <Link to="/skills" className="nav-link">
-                SKILLS
-              </Link>
-            </NavItem>
-              */}
-
             <NavItem>
               <NavLink
                 to="/contact"
