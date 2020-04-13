@@ -64,7 +64,8 @@ const Header = (props) => {
                 WORKS
               </NavLink>
             </NavItem>
-            <NavItem>
+            {/*
+    <NavItem>
               <NavLink
                 to="/contact"
                 className="nav-link nav__text"
@@ -73,6 +74,7 @@ const Header = (props) => {
                 CONTACT
               </NavLink>
             </NavItem>
+          */}
           </Nav>
         </Collapse>
       </Navbar>

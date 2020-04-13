@@ -4,8 +4,18 @@
   &__image {
     width: 100% !important;
   }
+  &__tools {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    font-size: 1.6rem;
+  }
 }
 
 a {
   color: $white;
+}
+.icon {
+  font-size: 1.7rem !important;
 }

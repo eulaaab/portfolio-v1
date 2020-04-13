@@ -25,7 +25,8 @@ export default function WorksList() {
     {
       id: "01",
       name: "EaterMeter",
-      description: "Lorem",
+      description:
+        "EaterMeter is a food metaseach engine designed to fulfill your hungry souls to find the best places to eat by seeing all the ratings from famous food rating platforms. The platform renders data taken from Google Places API, Yelp Fusion API, and Zomato Developers API ssuch as review ratings and count and restaurant informstion. from Built using React, styled using Bootsrap for reasponsiveness with the support of Reactstrap, then deployed in Heroku.",
       images: [eatermeter01, eatermeter02, eatermeter03, eatermeter04],
       tools: [
         <FontAwesomeIcon icon={faReact} className="icon" alt="React" />,
@@ -40,7 +41,8 @@ export default function WorksList() {
     {
       id: "02",
       name: "Startech",
-      description: "Lorem",
+      description:
+        "Startech is an informational website to help educate recent graduates build their careers. It is a static wedpage  built as part of the one-day hackathon with fellow UX Designer and Data Scientist students in the Winter 2020 Cohort",
       images: [startech01, startech02, startech03],
       tools: [
         <FontAwesomeIcon icon={faSass} className="icon" alt="SASS" />,
@@ -55,7 +57,7 @@ export default function WorksList() {
       id: "03",
       name: "BrainFlix",
       description:
-        "Lorem build upon Javascript concepts and learn React in depth for three sprints",
+        "Brainflix is a responsive web application built as a project in my program to learn React, restful APIs, and Component Lifecycle Methods. Features includes next video navigation, posting comments,  and upload videos.",
       images: [brainflix01, brainflix02, brainflix03, brainflix04],
       tools: [
         <FontAwesomeIcon icon={faSass} className="icon" alt="SASS" />,
