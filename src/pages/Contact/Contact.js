@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import contact1 from "../../assets/images/contact-01.jpg";
-import contact2 from "../../assets/images/contact-02.jpg";
+//import contact1 from "../../assets/images/contact-01.jpg";
+//import contact2 from "../../assets/images/contact-02.jpg";
 import "./Contact.scss";
 
 export default class Contact extends Component {

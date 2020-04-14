@@ -33,6 +33,7 @@ export default class About extends Component {
                   <a
                     href="https://brainstation.io/course/toronto/web-development-immersive"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     BrainStation
                   </a>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Works.scss";
 import WorksList from "../../components/WorksList/WorksList";
 

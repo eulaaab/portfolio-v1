@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 
 const WorkCard = (item) => {
-  const { id, name, description, images, tools, github, website, video } = item;
+  const { name, description, images, tools, github, website, video } = item;
   const [activeIndex, setActiveIndex] = useState(0);
   const next = () => {
     const nextIndex = activeIndex === images.length - 1 ? 0 : activeIndex + 1;
@@ -41,7 +41,7 @@ const WorkCard = (item) => {
           {images.map((item, i) => {
             return (
               <CarouselItem key={item.photoId}>
-                <img src={item} alt="image" className="card__image" />
+                <img src={item} className="card__image" alt={i} />
               </CarouselItem>
             );
           })}
