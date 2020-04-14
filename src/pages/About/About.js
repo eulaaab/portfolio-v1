@@ -63,67 +63,75 @@ export default class About extends Component {
                   <li>
                     <FontAwesomeIcon
                       icon={faHtml5}
-                      className="icon"
+                      className="about__icon"
                       alt="HTML5"
                     />
                   </li>
                   <li>
                     <FontAwesomeIcon
                       icon={faCss3}
-                      className="icon"
+                      className="about__icon"
                       alt="CSS3"
                     />
                   </li>
                   <li>
                     <FontAwesomeIcon
                       icon={faSass}
-                      className="icon"
+                      className="about__icon"
                       alt="SASS"
                     />
                   </li>
                   <li>
                     <FontAwesomeIcon
                       icon={faJs}
-                      className="icon"
+                      className="about__icon"
                       alt=" JavaScript"
                     />
                   </li>
                   <li>
                     <FontAwesomeIcon
                       icon={faReact}
-                      className="icon"
+                      className="about__icon"
                       alt="React"
                     />
                   </li>
                   <li>
                     <FontAwesomeIcon
                       icon={faNodeJs}
-                      className="icon"
+                      className="about__icon"
                       alt="NodeJs"
                     />
                   </li>
                   <li>
                     <FontAwesomeIcon
                       icon={faJira}
-                      className="icon"
+                      className="about__icon"
                       alt="Jira"
                     />
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faNpm} className="icon" alt="Npm" />
+                    <FontAwesomeIcon
+                      icon={faNpm}
+                      className="about__icon"
+                      alt="Npm"
+                    />
                   </li>
                   <li>
-                    <FontAwesomeIcon icon={faGit} className="icon" alt="Git" />
+                    <FontAwesomeIcon
+                      icon={faGit}
+                      className="about__icon"
+                      alt="Git"
+                    />
                   </li>
                   <li>
                     <FontAwesomeIcon
                       icon={faBootstrap}
-                      className="icon"
+                      className="about__icon"
                       alt="Bootstrap"
                     />
                   </li>
                   <li>
-                    <img src={heroku} className="icon__heroku" alt="Heroku" />
+                    <img src={heroku} className="about__heroku" alt="Heroku" />
                   </li>
                 </ul>
               </div>

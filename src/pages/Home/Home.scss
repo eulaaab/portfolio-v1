@@ -20,22 +20,6 @@
   }
 }
 
-.video-overlay {
-  //opacity: 0.3;
-  // display: none;
-  // @include medium {
-  //   display: flex;
-  //   position: relative;
-  //   background-image: rgba(0, 0, 0, 0.5);
-  //   width: 100%;
-  //   height: 100vh;
-  //   top: 90px;
-  //   opacity: 0.8;
-  //   z-index: 0;
-  //   overflow: hidden;
-  // }
-}
-
 #mainVid {
   display: none;
   @include tablet {

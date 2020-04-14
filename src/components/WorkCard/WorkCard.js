@@ -32,74 +32,78 @@ const WorkCard = (item) => {
     <>
       <div className="card text-white bg-primary mb-3">
         <h3 className="card-header">{name}</h3>
-        <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-          <CarouselIndicators
-            activeIndex={activeIndex}
-            onClickHandler={goToIndex}
-            items={images}
-          />
-          {images.map((item, i) => {
-            return (
-              <CarouselItem key={item.photoId}>
-                <img src={item} className="card__image" alt={i} />
-              </CarouselItem>
-            );
-          })}
-          <CarouselControl
-            direction="prev"
-            directionText="Previous"
-            onClickHandler={previous}
-          />
-          <CarouselControl
-            direction="next"
-            directionText="Next"
-            onClickHandler={next}
-          />
-        </Carousel>
-        <div className="card-body">
-          <p className="card-text">{description}</p>
-          <div className="card__tools">
-            <h5 className="card-title">TOOLS: </h5>
-            {tools.map((item, i) => (
-              <span>{item}</span>
-            ))}
+        <div className="card__body-container">
+          <div className="card__image-container">
+            <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+              <CarouselIndicators
+                activeIndex={activeIndex}
+                onClickHandler={goToIndex}
+                items={images}
+              />
+              {images.map((item, i) => {
+                return (
+                  <CarouselItem key={item.photoId}>
+                    <img src={item} className="card__image" alt={i} />
+                  </CarouselItem>
+                );
+              })}
+              <CarouselControl
+                direction="prev"
+                directionText="Previous"
+                onClickHandler={previous}
+              />
+              <CarouselControl
+                direction="next"
+                directionText="Next"
+                onClickHandler={next}
+              />
+            </Carousel>
           </div>
-          {website ? (
-            <a
-              href={website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card__link"
-            >
-              <FontAwesomeIcon icon={faLink} className="card__icon" />
-            </a>
-          ) : (
-            ""
-          )}
-          {github ? (
-            <a
-              href={github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card__link"
-            >
-              <FontAwesomeIcon icon={faGithub} className="card__icon" />
-            </a>
-          ) : (
-            ""
-          )}
-          {video ? (
-            <a
-              href={video}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card__link"
-            >
-              <FontAwesomeIcon icon={faVideo} className="card__icon" />
-            </a>
-          ) : (
-            ""
-          )}
+          <div className="card-body">
+            <p className="card-text">{description}</p>
+            <div className="card__tools">
+              <h5 className="card-title">TOOLS: </h5>
+              {tools.map((item, i) => (
+                <span>{item}</span>
+              ))}
+            </div>
+            {website ? (
+              <a
+                href={website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card__link"
+              >
+                <FontAwesomeIcon icon={faLink} className="card__icon" />
+              </a>
+            ) : (
+              ""
+            )}
+            {github ? (
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card__link"
+              >
+                <FontAwesomeIcon icon={faGithub} className="card__icon" />
+              </a>
+            ) : (
+              ""
+            )}
+            {video ? (
+              <a
+                href={video}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="card__link"
+              >
+                <FontAwesomeIcon icon={faVideo} className="card__icon" />
+              </a>
+            ) : (
+              ""
+            )}
+          </div>
         </div>
       </div>
     </>
