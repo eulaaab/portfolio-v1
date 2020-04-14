@@ -65,21 +65,36 @@ const WorkCard = (item) => {
             ))}
           </div>
           {website ? (
-            <a href={website} target="_blank" className="card__link">
+            <a
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card__link"
+            >
               <FontAwesomeIcon icon={faLink} className="card__icon" />
             </a>
           ) : (
             ""
           )}
           {github ? (
-            <a href={github} target="_blank" className="card__link">
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card__link"
+            >
               <FontAwesomeIcon icon={faGithub} className="card__icon" />
             </a>
           ) : (
             ""
           )}
           {video ? (
-            <a href={video} target="_blank" className="card__link">
+            <a
+              href={video}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card__link"
+            >
               <FontAwesomeIcon icon={faVideo} className="card__icon" />
             </a>
           ) : (

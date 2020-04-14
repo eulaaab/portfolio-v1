@@ -5,7 +5,6 @@ import {
   faReact,
   faLinkedin,
   faGithub,
-  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faFile, faHeart, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import emojis from "emojis-list";
@@ -24,7 +23,11 @@ const Footer = () => {
             </Col>
             <Col xs="6" className="footer__social">
               <Col>
-                <a href="github.com/eulaaab" target="_blank">
+                <a
+                  href="github.com/eulaaab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon icon={faGithub} className="icon" />
                 </a>
               </Col>
@@ -33,6 +36,7 @@ const Footer = () => {
                 <a
                   href="https://www.linkedin.com/in/eulabengco/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faLinkedin} className="icon" />
                 </a>
@@ -41,6 +45,7 @@ const Footer = () => {
                 <a
                   href="https://docs.google.com/document/d/1mRGhqcJQzpKn-3o8235B5nuiXQaxfMx55eAmZrLB5IA/edit?usp=sharing"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faFile} className="icon" />
                 </a>
