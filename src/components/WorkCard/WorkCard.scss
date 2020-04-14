@@ -11,6 +11,9 @@
   &__link {
     font-size: 1.6rem;
   }
+  &__icon {
+    margin-right: 0.5rem;
+  }
 }
 
 a {
@@ -18,4 +21,12 @@ a {
 }
 .icon {
   font-size: 1.7rem !important;
+}
+
+.carousel-indicators li {
+  width: 3px !important;
+}
+
+.card-title {
+  margin-right: 0.3rem;
 }

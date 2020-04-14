@@ -7,7 +7,7 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { faFile, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faFile, faHeart, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import emojis from "emojis-list";
 import "./Footer.scss";
 
@@ -47,11 +47,8 @@ const Footer = () => {
               </Col>
               <Col>
                 {" "}
-                <a
-                  href="https://www.instagram.com/forweownthesky/"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faInstagram} className="icon" />
+                <a href="mailto:eulabengco@gmail.com?Subject=Saying Hi!">
+                  <FontAwesomeIcon icon={faEnvelope} className="icon" />
                 </a>
               </Col>
             </Col>
