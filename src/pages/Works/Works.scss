@@ -20,15 +20,17 @@
   @include tablet {
     padding-left: 4rem;
     padding-right: 4rem;
+    margin-top: 2rem;
   }
   @include desktop {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 1rem auto 0;
   }
 }
 
 h1 {
   @include tablet {
     font-size: 2.6em !important;
+    margin-bottom: 1rem;
   }
 }

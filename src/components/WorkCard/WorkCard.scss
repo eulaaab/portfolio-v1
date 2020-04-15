@@ -4,6 +4,9 @@
 .card {
   //background-color: rgba(0, 0, 0, 0.4) !important;
   border: 0px transparent solid;
+  @include tablet {
+    margin-bottom: 3rem !important;
+  }
   &__image {
     width: 100% !important;
   }
@@ -27,7 +30,7 @@
   }
   &__tool {
     font-size: 2rem;
-    margin-right: 0.3rem;
+    margin-right: 0.5rem;
   }
   &__icon {
     margin-right: 0.5rem;

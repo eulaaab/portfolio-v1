@@ -19,6 +19,7 @@ import {
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 import heroku from "../../assets/images/heroku.svg";
+import ReadMoreReact from "read-more-react";
 
 export default function WorksList() {
   let projects = [
@@ -26,7 +27,7 @@ export default function WorksList() {
       id: "01",
       name: "EaterMeter",
       description:
-        "EaterMeter is a food metaseach engine designed to fulfill your hungry souls to find the best places to eat by seeing all the ratings in one place. The platform renders ratings, review count and restaurant information taken from APIs Google Places, Yelp Fusion, and Zomato Developers. Built using React, styled using Bootstrap and Reactstrap, then deployed in Heroku.",
+        "EaterMeter is a food metaseach engine designed to find the best places to eat by seeing all the ratings in one place. The platform renders ratings, review count and restaurant information taken from APIs Google Places, Yelp Fusion, and Zomato Developers.",
       images: [eatermeter01, eatermeter02, eatermeter03, eatermeter04],
       tools: [
         <FontAwesomeIcon icon={faReact} className="card__tool" alt="React" />,
@@ -83,4 +84,34 @@ export default function WorksList() {
       </div>
     </>
   );
+}
+
+{
+  /*
+  (
+  <ReadMoreReact
+    text={
+      "EaterMeter is a food metaseach engine designed to fulfill your hungry souls to find the best places to eat by seeing all the ratings in one place. The platform renders ratings, review count and restaurant information taken from APIs Google Places, Yelp Fusion, and Zomato Developers. Built using React, styled using Bootstrap and Reactstrap, then deployed in Heroku."
+    }
+    min={147}
+    ideal={147}
+    max={147}
+    className="read-more"
+    readMoreText="read more"
+  />
+
+
+   `EaterMeter is a food metaseach engine designed to fulfill your hungry souls to find the best places to eat by seeing all the ratings in one place.${(
+        <span className="more-text">
+          <button className="btn">Read More</button>
+          <p>
+            The platform renders ratings, review count and restaurant
+            information taken from APIs Google Places, Yelp Fusion, and Zomato
+            Developers. Built using React, styled using Bootstrap and
+            Reactstrap, then deployed in Heroku.
+          </p>
+        </span>
+      )}The platform renders ratings, review count and restaurant information taken from APIs Google Places, Yelp Fusion, and Zomato Developers. Built using React, styled using Bootstrap and Reactstrap, then deployed in Heroku.`
+)
+*/
 }

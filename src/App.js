@@ -4,7 +4,6 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Works from "./pages/Works/Works";
-import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/works" component={Works} />
-          <Route path="/contact" component={Contact} />
         </Switch>
         <Footer />
       </BrowserRouter>
