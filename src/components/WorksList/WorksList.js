@@ -19,7 +19,6 @@ import {
   faBootstrap,
 } from "@fortawesome/free-brands-svg-icons";
 import heroku from "../../assets/images/heroku.svg";
-import ReadMoreReact from "read-more-react";
 
 export default function WorksList() {
   let projects = [

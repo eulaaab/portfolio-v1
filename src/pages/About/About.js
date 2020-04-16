@@ -51,9 +51,11 @@ export default class About extends Component {
                   Olympus OM-D Mark II.
                 </p>
                 <Link to="/contact">
-                  <button type="button" className="btn btn-primary">
-                    SAY HELLO
-                  </button>
+                  <a href="mailto:eulabengco@gmail.com?Subject=Saying Hi!">
+                    <button type="button" className="btn btn-primary">
+                      SAY HELLO
+                    </button>
+                  </a>
                 </Link>
               </div>
               <div className="about__skills">
