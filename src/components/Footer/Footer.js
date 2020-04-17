@@ -24,7 +24,7 @@ const Footer = () => {
             <Col xs="6" className="footer__social">
               <Col>
                 <a
-                  href="github.com/eulaaab"
+                  href="https://github.com/eulaaab"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
