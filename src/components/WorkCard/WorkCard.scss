@@ -45,6 +45,12 @@
     border-radius: 0.5rem;
     background-color: white;
   }
+  &__firebase {
+    width: 35px;
+    height: 35px;
+    border-radius: 0.5rem;
+    color: white;
+  }
 }
 .card-body {
   @include desktop {

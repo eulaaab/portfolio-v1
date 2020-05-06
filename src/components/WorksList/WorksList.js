@@ -11,19 +11,42 @@ import brainflix04 from "../../assets/images/brainflix-04.png";
 import startech01 from "../../assets/images/startech-01.png";
 import startech02 from "../../assets/images/startech-02.png";
 import startech03 from "../../assets/images/startech-03.png";
+import tetherCert from "../../assets/images/bstn-ms-cert.png";
+import tether00 from "../../assets/images/tether-00.png";
+import tether01 from "../../assets/images/tether-01.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSass,
   faReact,
   faNodeJs,
   faBootstrap,
+  faSketch,
 } from "@fortawesome/free-brands-svg-icons";
+import firebase from "../../assets/images/firebase.png";
 import heroku from "../../assets/images/heroku.svg";
 
 export default function WorksList() {
   let projects = [
     {
       id: "01",
+      name: "tether",
+      description:
+        "tether is a productivity web app that display Slack statuses based on the Jira ticket they are actively working on. Built with a Firebase database deployed in Heroku. You can login using Google and Github Oauthentication. BrainStation x Microsoft HackingAtHome hackathon project with 6 people completed in 2 days.",
+      images: [tetherCert, tether00, tether01],
+      tools: [
+        <FontAwesomeIcon icon={faSass} className="card__tool" alt="SASS" />,
+        <FontAwesomeIcon icon={faNodeJs} className="card__tool" alt="NodeJs" />,
+        <FontAwesomeIcon icon={faReact} className="card__tool" alt="React" />,
+        <FontAwesomeIcon icon={faSketch} className="card__tool" alt="Sketch" />,
+        <img src={heroku} className="card__heroku" alt="Heroku" />,
+        <img src={firebase} className="card__firebase" alt="Firebase" />,
+      ],
+      github: "",
+      website: "http://tiny.cc/55bhoz",
+      video: "",
+    },
+    {
+      id: "02",
       name: "EaterMeter",
       description:
         "EaterMeter is a food metaseach engine designed to find the best places to eat by seeing all the ratings in one place. The platform renders ratings, review count and restaurant information taken from APIs Google Places, Yelp Fusion, and Zomato Developers.",
@@ -43,7 +66,7 @@ export default function WorksList() {
       video: "https://www.loom.com/share/74fc829740a54cabb888f3f30e908065",
     },
     {
-      id: "02",
+      id: "03",
       name: "Startech",
       description:
         "Startech is an informational website to help educate recent graduates kickstart their careers. A static wedpage  built as part of the one-day hackathon with fellow UX Designer and Data Scientist students in the Winter 2020 Cohort",
@@ -58,7 +81,7 @@ export default function WorksList() {
       video: "",
     },
     {
-      id: "03",
+      id: "04",
       name: "BrainFlix",
       description:
         "Brainflix is a responsive web application built as a project in my program to learn React, restful APIs, and Component Lifecycle Methods. Features includes next video navigation, posting comments,  and upload videos.",
@@ -68,7 +91,7 @@ export default function WorksList() {
         <FontAwesomeIcon icon={faNodeJs} className="card__tool" alt="NodeJs" />,
         <FontAwesomeIcon icon={faReact} className="card__tool" alt="React" />,
       ],
-      github: "https://github.com/eulaaab/eula-bengco-brainflix",
+      github: "",
       website: "",
       video: "",
     },
